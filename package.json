@@ -1,0 +1,11 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "description": "\"Play code, mostly RPI crap\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nathan Offutt <noffutt@onetwosee.com> (http://nathanoffutt.com/)",
+  "license": "ISC"
+}
