@@ -19,4 +19,4 @@ draw.text((x, y), message, inky_display.BLACK, font)
 inky_display.set_image(img)
 inky_display.show()
 
-#codeß
+#code
