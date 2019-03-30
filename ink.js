@@ -23,7 +23,7 @@ async function main () {
   }
 
   await inkyphat.redraw();
-  await inkyphat.destroy();
+  //await inkyphat.destroy();
 
 }
 main();
