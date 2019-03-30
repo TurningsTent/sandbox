@@ -2,7 +2,7 @@ var gpio = require('rpi-gpio');
 var rpi_gpio_buttons = require('rpi-gpio-buttons');
 
 var gpiop = gpio.promise;
-gpio.setMode( 'MODE_BCM' );
+gpio.setMode( gpio.MODE_BCM );
 var buttons = rpi_gpio_buttons([4], { mode: rpi_gpio_buttons.MODE_BCM });
 
 let count = 0;
