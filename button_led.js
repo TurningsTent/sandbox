@@ -22,8 +22,14 @@ gpiop.setup( 23, gpio.DIR_OUT)
   });
 
 function userClicked( pin ) {
-  clickCount++;
-  led_state = !led_state;
-  console.log( 'pressed: ',pin, clickCount, led_state );
-  gpiop.write( 23, led_state );
+	if( !led_state ){
+	  clickCount++;
+	  led_state = !led_state;
+	  console.log( 'pressed: ',pin, clickCount, led_state );
+	  gpiop.write( 23, led_state );
+	  setTimeout(()=>{
+	  	led_state = !led_state;
+	  	gpiop.write( 23, led_state );
+	  }, 3000 );
+	}
 }
