@@ -1,5 +1,5 @@
-// create an instance of the rpio-gpio-buttons object with pins 11 and 13
-var buttons = require('rpi-gpio-buttons')([18, 13]);
+var rpi_gpio_buttons = require('rpi-gpio-buttons');
+var buttons = rpi_gpio_buttons([18,13], { mode: rpi_gpio_buttons.MODE_BCM });
 
 console.log('Waiting for button clicks');
 
