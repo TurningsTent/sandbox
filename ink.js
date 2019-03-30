@@ -6,7 +6,7 @@ async function main () {
 
   // Default profile is quick (profiles only work with v2 screen)...
   console.log('Modes: ', inkyphat.getModes());
-  inkyphat.setMode('pimoroni_yellow');
+  inkyphat.setMode('quick');
 
   let color = inkyphat.BLACK;
   for (let x = 0; x < (inkyphat.getWidth() / 4) - 2; x++) {
@@ -23,7 +23,7 @@ async function main () {
   }
 
   await inkyphat.redraw();
-
   await inkyphat.destroy();
+
 }
 main();
