@@ -1,8 +1,11 @@
 import RPi.GPIO as GPIO
 
-# the rest of your code would go here
+GPIO.setmode(GPIO.BCM)
+LED = 23
+ledState = False
 
-# when your code ends, the last line before the program exits would be...
+GPIO.setup(LED,GPIO.OUT)
+
+#ledState = not ledState
+GPIO.output(LED, ledState)
 GPIO.cleanup()
-
-# remember, a program doesn't necessarily exit at the last line!
