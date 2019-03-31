@@ -67,8 +67,6 @@ class App {
 
   takeReadings( cb ){
 
-  	console.log( this.configs );
-
   	async.timesSeries( this.configs.readings, ( n, next ) => {
   		this.takeReading( ( err, result ) => {
   			setTimeout( () => {
@@ -84,13 +82,8 @@ class App {
   takeReading( cb ){
 
   	this.lux_sensor.readLuminosity( ( err, data ) => {
-			setTimeout( () => { this.leds.write( this.configs.led_gpios.active, false ) },500 );
-			//this.leds.write( this.configs.led_gpios.active, false );
-      if (err) {
-          console.log(err);
-      } else {
-          console.log(data);
-      }
+			this.leds.write( this.configs.led_gpios.active, false );
+      cb( err, data );
     });
 
   }
