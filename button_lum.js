@@ -25,8 +25,12 @@ class App {
   	this.leds = gpio.promise;
   	gpio.setMode( gpio.MODE_BCM );
 
-  	this.leds.setup( config.led_gpios.active, gpio.DIR_OUT ).then( () => {
+  	Promise.all([
+  		this.leds.setup( config.led_gpios.active, gpio.DIR_OUT ),
+  		this.leds.setup( config.led_gpios.ready, gpio.DIR_OUT )
+  	]).then( () => {
 	  	console.log('LEDs ready!',config.led_gpios.active);
+	  	this.leds.write( this.configs.led_gpios.ready, true );
 	  	this.states.leds_ready = true;
 	  }).catch( err => {
 	      console.log('Error: ', err.toString() );
@@ -55,8 +59,10 @@ class App {
   	console.log( 'pressed: ',pin );
   	if( this.states.sensor_ready && this.states.leds_ready && !this.states.reading ){
   		this.states.reading = true;
+  		this.leds.write( this.configs.led_gpios.ready, false );
   		this.leds.write( this.configs.led_gpios.active, true );
   		this.takeReadings( ( err, data ) => {
+  			this.leds.write( this.configs.led_gpios.ready, true );
   			this.leds.write( this.configs.led_gpios.active, false );
   			if (err) {
 	          console.log(err);
@@ -119,7 +125,8 @@ class App {
 let app = new App({
 	button_gpios: [4],
 	led_gpios:{
-		active: 17
+		active: 17,
+		ready: 27
 	},
 	lux_sensor: {
 		AGAIN: 2,
