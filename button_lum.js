@@ -67,6 +67,8 @@ class App {
 
   takeReadings( cb ){
 
+  	console.log( this.configs );
+
   	async.timesSeries( this.configs.readings, ( n, next ) => {
   		this.takeReading( ( err, result ) => {
   			setTimeout( () => {
