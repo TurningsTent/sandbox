@@ -2,6 +2,7 @@ const rpi_gpio_buttons = require('rpi-gpio-buttons');
 const tsl2591 = require('tsl2591');
 const gpio = require('rpi-gpio');
 const async = require('async');
+const _ = require('underscore');
 
 let gpiop = gpio.promise;
 gpio.setMode( gpio.MODE_BCM );
@@ -65,16 +66,35 @@ class App {
 
   }
 
+  averageResults( results ){
+
+  	let sums = _.reduce( results, ( memo, reading ) => {
+  		memo.vis_ir += reading.vis_ir;
+  		memo.ir += reading.ir;
+  		return memo;
+  	}, {
+			vis_ir: 0, ir: 0
+		});
+
+		return {
+			vis_ir: ( sums.vis_ir / results.length ).toFixed(2),
+			ir: ( sums.ir / results.length ).toFixed(2)
+		}
+
+  		.
+  }
+
   takeReadings( cb ){
 
   	async.timesSeries( this.configs.readings, ( n, next ) => {
+  		console.log( n+' / '+this.configs.readings );
   		this.takeReading( ( err, result ) => {
   			setTimeout( () => {
   				next( err, result );
   			}, this.configs.reading_timeout );
   		});
 		}, ( err, results ) => {
-			cb( err, results );
+			cb( err, this.averageResults( results ) );
 		});
 
   }
@@ -99,6 +119,6 @@ let app = new App({
 		AGAIN: 0,
 		ATIME: 1
 	},
-	readings: 100,
-	reading_timeout: 200
+	readings: 50,
+	reading_timeout: 100
 });
