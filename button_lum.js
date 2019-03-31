@@ -118,10 +118,14 @@ class App {
     });
 
   }
-  cleanup(){
+
+  cleanup( cb ){
   	console.log('turning off leds');
   	this.leds.write( this.configs.led_gpios.ready, false );
   	this.leds.write( this.configs.led_gpios.active, false );
+  	setTimeout( () => {
+  		cb();
+  	}, 500 )
   }
 
 }
@@ -142,13 +146,28 @@ let app = new App({
 });
 
 process.stdin.resume(); //TO ALLOW FOR CLEANUP
-process.on('exit', exitHandler.bind(null,{cleanup:true}));
-process.on('SIGINT', exitHandler.bind(null, {exit:true}));
-process.on('SIGUSR1', exitHandler.bind(null, {exit:true}));
-process.on('SIGUSR2', exitHandler.bind(null, {exit:true}));
-process.on('uncaughtException', exitHandler.bind(null, {exit:true}));
 
-function exitHandler(options, exitCode) {
-    if (options.cleanup) app.cleanup();
-    if (options.exit) process.exit();
+process.on('exit', function () {
+    // Do some cleanup such as close db
+    console.log('shutting down');
+});
+
+// catching signals and do something before exit
+['SIGHUP', 'SIGINT', 'SIGQUIT', 'SIGILL', 'SIGTRAP', 'SIGABRT',
+    'SIGBUS', 'SIGFPE', 'SIGUSR1', 'SIGSEGV', 'SIGUSR2', 'SIGTERM'
+].forEach(function (sig) {
+    process.on(sig, function () {
+        terminator(sig);
+        console.log( 'signal: ' + sig );
+    });
+});
+
+function terminator(sig) {
+  if (typeof sig === "string") {
+    // call your async task here and then call process.exit() after async task is done
+    app.cleanup( () => {
+      process.exit(1);
+    });
+  }
+  console.log('Node server stopped.');
 }
