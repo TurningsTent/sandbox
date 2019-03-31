@@ -29,7 +29,7 @@ class App {
   		this.leds.setup( config.led_gpios.active, gpio.DIR_OUT ),
   		this.leds.setup( config.led_gpios.ready, gpio.DIR_OUT )
   	]).then( () => {
-	  	console.log('LEDs ready!',config.led_gpios.active);
+	  	console.log('LEDs ready!',config.led_gpios );
 	  	this.leds.write( this.configs.led_gpios.ready, true );
 	  	this.states.leds_ready = true;
 	  }).catch( err => {
