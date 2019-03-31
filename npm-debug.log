@@ -1,0 +1,1333 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'tsl2591' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of /Users/nathan/Projects/sandbox/package.json
+5 warn package.json sandbox@1.0.0 No repository field.
+6 warn package.json sandbox@1.0.0 No README data
+7 verbose installManyTop reading scoped package data from /Users/nathan/Projects/sandbox/node_modules/inkyphat/package.json
+8 verbose installManyTop reading scoped package data from /Users/nathan/Projects/sandbox/node_modules/rpi-gpio/package.json
+9 verbose installManyTop reading scoped package data from /Users/nathan/Projects/sandbox/node_modules/rpi-gpio-buttons/package.json
+10 verbose readDependencies loading dependencies from /Users/nathan/Projects/sandbox/package.json
+11 silly cache add args [ 'tsl2591', null ]
+12 verbose cache add spec tsl2591
+13 silly cache add parsed spec Result {
+13 silly cache add   raw: 'tsl2591',
+13 silly cache add   scope: null,
+13 silly cache add   name: 'tsl2591',
+13 silly cache add   rawSpec: '',
+13 silly cache add   spec: 'latest',
+13 silly cache add   type: 'tag' }
+14 silly addNamed tsl2591@latest
+15 verbose addNamed "latest" is being treated as a dist-tag for tsl2591
+16 info addNameTag [ 'tsl2591', 'latest' ]
+17 silly mapToRegistry name tsl2591
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry data Result {
+20 silly mapToRegistry   raw: 'tsl2591',
+20 silly mapToRegistry   scope: null,
+20 silly mapToRegistry   name: 'tsl2591',
+20 silly mapToRegistry   rawSpec: '',
+20 silly mapToRegistry   spec: 'latest',
+20 silly mapToRegistry   type: 'tag' }
+21 silly mapToRegistry uri https://registry.npmjs.org/tsl2591
+22 verbose addNameTag registry:https://registry.npmjs.org/tsl2591 not in flight; fetching
+23 verbose request uri https://registry.npmjs.org/tsl2591
+24 verbose request no auth needed
+25 info attempt registry request try #1 at 1:28:26 PM
+26 verbose request id afff6dd39734b0e3
+27 http request GET https://registry.npmjs.org/tsl2591
+28 http 200 https://registry.npmjs.org/tsl2591
+29 verbose headers { date: 'Sun, 31 Mar 2019 17:28:27 GMT',
+29 verbose headers   'content-type': 'application/json; charset=UTF-8',
+29 verbose headers   'transfer-encoding': 'chunked',
+29 verbose headers   connection: 'keep-alive',
+29 verbose headers   'set-cookie': [ '__cfduid=d83e6a7a6788e87ee9f62ea53c2dd41191554053307; expires=Mon, 30-Mar-20 17:28:27 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+29 verbose headers   'cf-cache-status': 'MISS',
+29 verbose headers   'cache-control': 'max-age=300',
+29 verbose headers   'cf-ray': '4c040a318e789a22-EWR',
+29 verbose headers   etag: 'W/"b12b15b8113217b82840685bfe4fe0f8"',
+29 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+29 verbose headers   'last-modified': 'Sun, 27 May 2018 19:59:51 GMT',
+29 verbose headers   vary: 'accept-encoding, accept',
+29 verbose headers   server: 'cloudflare',
+29 verbose headers   'content-encoding': 'gzip' }
+30 silly get cb [ 200,
+30 silly get   { date: 'Sun, 31 Mar 2019 17:28:27 GMT',
+30 silly get     'content-type': 'application/json; charset=UTF-8',
+30 silly get     'transfer-encoding': 'chunked',
+30 silly get     connection: 'keep-alive',
+30 silly get     'set-cookie': [ '__cfduid=d83e6a7a6788e87ee9f62ea53c2dd41191554053307; expires=Mon, 30-Mar-20 17:28:27 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+30 silly get     'cf-cache-status': 'MISS',
+30 silly get     'cache-control': 'max-age=300',
+30 silly get     'cf-ray': '4c040a318e789a22-EWR',
+30 silly get     etag: 'W/"b12b15b8113217b82840685bfe4fe0f8"',
+30 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+30 silly get     'last-modified': 'Sun, 27 May 2018 19:59:51 GMT',
+30 silly get     vary: 'accept-encoding, accept',
+30 silly get     server: 'cloudflare',
+30 silly get     'content-encoding': 'gzip' } ]
+31 verbose get saving tsl2591 to /Users/nathan/.npm/registry.npmjs.org/tsl2591/.cache.json
+32 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+33 silly addNameTag next cb for tsl2591 with tag latest
+34 silly addNamed tsl2591@0.2.0
+35 verbose addNamed "0.2.0" is a plain semver version for tsl2591
+36 silly mapToRegistry name tsl2591
+37 silly mapToRegistry using default registry
+38 silly mapToRegistry registry https://registry.npmjs.org/
+39 silly mapToRegistry data Result {
+39 silly mapToRegistry   raw: 'tsl2591',
+39 silly mapToRegistry   scope: null,
+39 silly mapToRegistry   name: 'tsl2591',
+39 silly mapToRegistry   rawSpec: '',
+39 silly mapToRegistry   spec: 'latest',
+39 silly mapToRegistry   type: 'tag' }
+40 silly mapToRegistry uri https://registry.npmjs.org/tsl2591
+41 verbose addRemoteTarball https://registry.npmjs.org/tsl2591/-/tsl2591-0.2.0.tgz not in flight; adding
+42 verbose addRemoteTarball [ 'https://registry.npmjs.org/tsl2591/-/tsl2591-0.2.0.tgz',
+42 verbose addRemoteTarball   '176dbaf9096291ea3f36732c40de586cc1d1bd48' ]
+43 info retry fetch attempt 1 at 1:28:28 PM
+44 info attempt registry request try #1 at 1:28:28 PM
+45 http fetch GET https://registry.npmjs.org/tsl2591/-/tsl2591-0.2.0.tgz
+46 http fetch 200 https://registry.npmjs.org/tsl2591/-/tsl2591-0.2.0.tgz
+47 silly fetchAndShaCheck shasum 176dbaf9096291ea3f36732c40de586cc1d1bd48
+48 verbose addTmpTarball /var/folders/l3/m_1m2z4d3n11spvqvhdn06180000gn/T/npm-2057-46d89d03/registry.npmjs.org/tsl2591/-/tsl2591-0.2.0.tgz not in flight; adding
+49 verbose addTmpTarball already have metadata; skipping unpack for tsl2591@0.2.0
+50 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+51 silly cache afterAdd tsl2591@0.2.0
+52 verbose afterAdd /Users/nathan/.npm/tsl2591/0.2.0/package/package.json not in flight; writing
+53 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+54 verbose afterAdd /Users/nathan/.npm/tsl2591/0.2.0/package/package.json written
+55 silly install resolved [ { name: 'tsl2591',
+55 silly install resolved     version: '0.2.0',
+55 silly install resolved     description: 'TSL2591 light sensor with i2c interface',
+55 silly install resolved     homepage: 'https://github.com/bbx10node/tsl2591-node',
+55 silly install resolved     bugs: { url: 'https://github.com/bbx10node/tsl2591-node/issues' },
+55 silly install resolved     main: 'tsl2591.js',
+55 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+55 silly install resolved     repository: { type: 'git', url: 'git://github.com/bbx10/tsl2591-node.git' },
+55 silly install resolved     keywords: [ 'light', 'sensor', 'i2c', 'tsl2591' ],
+55 silly install resolved     author: { name: 'bbx10node@gmail.com' },
+55 silly install resolved     license: 'MIT',
+55 silly install resolved     gitHead: 'd584b5fba77f7132a66e2f061ea8747aa6addc2f',
+55 silly install resolved     dependencies: { i2c: '>=0.2.0' },
+55 silly install resolved     devDependencies: {},
+55 silly install resolved     _id: 'tsl2591@0.2.0',
+55 silly install resolved     _shasum: '176dbaf9096291ea3f36732c40de586cc1d1bd48',
+55 silly install resolved     _from: 'tsl2591@latest',
+55 silly install resolved     _npmVersion: '1.4.19',
+55 silly install resolved     _npmUser: { name: 'bbx10node', email: 'bbx10node@gmail.com' },
+55 silly install resolved     maintainers: [ [Object] ],
+55 silly install resolved     dist:
+55 silly install resolved      { shasum: '176dbaf9096291ea3f36732c40de586cc1d1bd48',
+55 silly install resolved        tarball: 'https://registry.npmjs.org/tsl2591/-/tsl2591-0.2.0.tgz' },
+55 silly install resolved     directories: {},
+55 silly install resolved     _resolved: 'https://registry.npmjs.org/tsl2591/-/tsl2591-0.2.0.tgz' } ]
+56 info install tsl2591@0.2.0 into /Users/nathan/Projects/sandbox
+57 info installOne tsl2591@0.2.0
+58 verbose installOne of tsl2591 to /Users/nathan/Projects/sandbox not in flight; installing
+59 verbose correctMkdir /Users/nathan/.npm/_locks correctMkdir not in flight; initializing
+60 verbose lock using /Users/nathan/.npm/_locks/tsl2591-043afc4a6baff098.lock for /Users/nathan/Projects/sandbox/node_modules/tsl2591
+61 silly install write writing tsl2591 0.2.0 to /Users/nathan/Projects/sandbox/node_modules/tsl2591
+62 verbose unbuild node_modules/tsl2591
+63 silly gentlyRm /Users/nathan/Projects/sandbox/node_modules/tsl2591 is being purged from base /Users/nathan/Projects/sandbox
+64 verbose gentlyRm don't care about contents; nuking /Users/nathan/Projects/sandbox/node_modules/tsl2591
+65 verbose tar unpack /Users/nathan/.npm/tsl2591/0.2.0/package.tgz
+66 verbose tar unpacking to /Users/nathan/Projects/sandbox/node_modules/tsl2591
+67 silly gentlyRm /Users/nathan/Projects/sandbox/node_modules/tsl2591 is being purged
+68 verbose gentlyRm don't care about contents; nuking /Users/nathan/Projects/sandbox/node_modules/tsl2591
+69 silly gunzTarPerm modes [ '755', '644' ]
+70 silly gunzTarPerm extractEntry package.json
+71 silly gunzTarPerm extractEntry .npmignore
+72 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+73 silly gunzTarPerm extractEntry README.md
+74 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+75 silly gunzTarPerm extractEntry LICENSE
+76 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+77 silly gunzTarPerm extractEntry tsl2591.js
+78 silly gunzTarPerm extractEntry examples/simple.js
+79 silly gunzTarPerm extractEntry examples/tweakui/package.json
+80 silly gunzTarPerm extractEntry examples/tweakui/app_functions.js
+81 silly gunzTarPerm extractEntry examples/tweakui/index.js
+82 silly gunzTarPerm extractEntry examples/tweakui/jquery-1.11.1.min.js
+83 silly gunzTarPerm extractEntry examples/tweakui/index.html
+84 verbose write writing to /Users/nathan/Projects/sandbox/node_modules/tsl2591/package.json
+85 info preinstall tsl2591@0.2.0
+86 verbose readDependencies loading dependencies from /Users/nathan/Projects/sandbox/node_modules/tsl2591/package.json
+87 silly prepareForInstallMany adding i2c@>=0.2.0 from tsl2591 dependencies
+88 verbose readDependencies loading dependencies from /Users/nathan/Projects/sandbox/node_modules/tsl2591/package.json
+89 silly cache add args [ 'i2c@>=0.2.0', null ]
+90 verbose cache add spec i2c@>=0.2.0
+91 silly cache add parsed spec Result {
+91 silly cache add   raw: 'i2c@>=0.2.0',
+91 silly cache add   scope: null,
+91 silly cache add   name: 'i2c',
+91 silly cache add   rawSpec: '>=0.2.0',
+91 silly cache add   spec: '>=0.2.0',
+91 silly cache add   type: 'range' }
+92 silly addNamed i2c@>=0.2.0
+93 verbose addNamed ">=0.2.0" is a valid semver range for i2c
+94 silly addNameRange { name: 'i2c', range: '>=0.2.0', hasData: false }
+95 silly mapToRegistry name i2c
+96 silly mapToRegistry using default registry
+97 silly mapToRegistry registry https://registry.npmjs.org/
+98 silly mapToRegistry data Result {
+98 silly mapToRegistry   raw: 'i2c',
+98 silly mapToRegistry   scope: null,
+98 silly mapToRegistry   name: 'i2c',
+98 silly mapToRegistry   rawSpec: '',
+98 silly mapToRegistry   spec: 'latest',
+98 silly mapToRegistry   type: 'tag' }
+99 silly mapToRegistry uri https://registry.npmjs.org/i2c
+100 verbose addNameRange registry:https://registry.npmjs.org/i2c not in flight; fetching
+101 verbose request uri https://registry.npmjs.org/i2c
+102 verbose request no auth needed
+103 info attempt registry request try #1 at 1:28:29 PM
+104 http request GET https://registry.npmjs.org/i2c
+105 http 200 https://registry.npmjs.org/i2c
+106 verbose headers { date: 'Sun, 31 Mar 2019 17:28:29 GMT',
+106 verbose headers   'content-type': 'application/json; charset=UTF-8',
+106 verbose headers   'transfer-encoding': 'chunked',
+106 verbose headers   connection: 'keep-alive',
+106 verbose headers   'set-cookie': [ '__cfduid=db2129ac5b92a49b8e5594341f24d3a291554053309; expires=Mon, 30-Mar-20 17:28:29 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+106 verbose headers   'cf-cache-status': 'MISS',
+106 verbose headers   'cache-control': 'max-age=300',
+106 verbose headers   'cf-ray': '4c040a3f3b509a22-EWR',
+106 verbose headers   etag: 'W/"caab639aa173db9cd39614ff2a1edd63"',
+106 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+106 verbose headers   'last-modified': 'Sun, 27 May 2018 04:19:27 GMT',
+106 verbose headers   vary: 'accept-encoding, accept',
+106 verbose headers   server: 'cloudflare',
+106 verbose headers   'content-encoding': 'gzip' }
+107 silly get cb [ 200,
+107 silly get   { date: 'Sun, 31 Mar 2019 17:28:29 GMT',
+107 silly get     'content-type': 'application/json; charset=UTF-8',
+107 silly get     'transfer-encoding': 'chunked',
+107 silly get     connection: 'keep-alive',
+107 silly get     'set-cookie': [ '__cfduid=db2129ac5b92a49b8e5594341f24d3a291554053309; expires=Mon, 30-Mar-20 17:28:29 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+107 silly get     'cf-cache-status': 'MISS',
+107 silly get     'cache-control': 'max-age=300',
+107 silly get     'cf-ray': '4c040a3f3b509a22-EWR',
+107 silly get     etag: 'W/"caab639aa173db9cd39614ff2a1edd63"',
+107 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+107 silly get     'last-modified': 'Sun, 27 May 2018 04:19:27 GMT',
+107 silly get     vary: 'accept-encoding, accept',
+107 silly get     server: 'cloudflare',
+107 silly get     'content-encoding': 'gzip' } ]
+108 verbose get saving i2c to /Users/nathan/.npm/registry.npmjs.org/i2c/.cache.json
+109 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+110 silly addNameRange number 2 { name: 'i2c', range: '>=0.2.0', hasData: true }
+111 silly addNameRange versions [ 'i2c',
+111 silly addNameRange   [ '0.0.1',
+111 silly addNameRange     '0.0.2',
+111 silly addNameRange     '0.0.3',
+111 silly addNameRange     '0.0.4',
+111 silly addNameRange     '0.0.5',
+111 silly addNameRange     '0.1.0',
+111 silly addNameRange     '0.1.1',
+111 silly addNameRange     '0.1.2',
+111 silly addNameRange     '0.1.3',
+111 silly addNameRange     '0.1.4',
+111 silly addNameRange     '0.1.5',
+111 silly addNameRange     '0.1.6',
+111 silly addNameRange     '0.1.7',
+111 silly addNameRange     '0.1.8',
+111 silly addNameRange     '0.2.0',
+111 silly addNameRange     '0.2.1',
+111 silly addNameRange     '0.2.3' ] ]
+112 silly addNamed i2c@0.2.3
+113 verbose addNamed "0.2.3" is a plain semver version for i2c
+114 silly mapToRegistry name i2c
+115 silly mapToRegistry using default registry
+116 silly mapToRegistry registry https://registry.npmjs.org/
+117 silly mapToRegistry data Result {
+117 silly mapToRegistry   raw: 'i2c',
+117 silly mapToRegistry   scope: null,
+117 silly mapToRegistry   name: 'i2c',
+117 silly mapToRegistry   rawSpec: '',
+117 silly mapToRegistry   spec: 'latest',
+117 silly mapToRegistry   type: 'tag' }
+118 silly mapToRegistry uri https://registry.npmjs.org/i2c
+119 verbose addRemoteTarball https://registry.npmjs.org/i2c/-/i2c-0.2.3.tgz not in flight; adding
+120 verbose addRemoteTarball [ 'https://registry.npmjs.org/i2c/-/i2c-0.2.3.tgz',
+120 verbose addRemoteTarball   'f43f7028141026ae48af2990a374633d1dab3d2b' ]
+121 info retry fetch attempt 1 at 1:28:30 PM
+122 info attempt registry request try #1 at 1:28:30 PM
+123 http fetch GET https://registry.npmjs.org/i2c/-/i2c-0.2.3.tgz
+124 http fetch 200 https://registry.npmjs.org/i2c/-/i2c-0.2.3.tgz
+125 silly fetchAndShaCheck shasum f43f7028141026ae48af2990a374633d1dab3d2b
+126 verbose addTmpTarball /var/folders/l3/m_1m2z4d3n11spvqvhdn06180000gn/T/npm-2057-46d89d03/registry.npmjs.org/i2c/-/i2c-0.2.3.tgz not in flight; adding
+127 verbose addTmpTarball already have metadata; skipping unpack for i2c@0.2.3
+128 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+129 silly cache afterAdd i2c@0.2.3
+130 verbose afterAdd /Users/nathan/.npm/i2c/0.2.3/package/package.json not in flight; writing
+131 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+132 verbose afterAdd /Users/nathan/.npm/i2c/0.2.3/package/package.json written
+133 silly install resolved [ { name: 'i2c',
+133 silly install resolved     version: '0.2.3',
+133 silly install resolved     description: 'Native bindings for i2c-dev. Plays well with Raspberry Pi and BeagleBone.',
+133 silly install resolved     main: 'main.js',
+133 silly install resolved     author: { name: 'Kelly Korevec' },
+133 silly install resolved     repository:
+133 silly install resolved      { type: 'git',
+133 silly install resolved        url: 'git+ssh://git@github.com/korevec/node-i2c.git' },
+133 silly install resolved     license: 'BSD-3-Clause-Attribution',
+133 silly install resolved     dependencies:
+133 silly install resolved      { bindings: '1.2.1',
+133 silly install resolved        underscore: '1.8.2',
+133 silly install resolved        'coffee-script': '1.9.1',
+133 silly install resolved        repl: '0.1.3',
+133 silly install resolved        nan: '~2.3.5' },
+133 silly install resolved     engine: 'node >= 0.12.0',
+133 silly install resolved     scripts: { install: 'node-gyp rebuild' },
+133 silly install resolved     gypfile: true,
+133 silly install resolved     gitHead: '98e2301b5b877e3fb605904cbbc0a480ae2d6ae5',
+133 silly install resolved     bugs: { url: 'https://github.com/korevec/node-i2c/issues' },
+133 silly install resolved     homepage: 'https://github.com/korevec/node-i2c#readme',
+133 silly install resolved     _id: 'i2c@0.2.3',
+133 silly install resolved     _shasum: 'f43f7028141026ae48af2990a374633d1dab3d2b',
+133 silly install resolved     _from: 'i2c@>=0.2.0',
+133 silly install resolved     _npmVersion: '3.8.6',
+133 silly install resolved     _nodeVersion: '4.2.3',
+133 silly install resolved     _npmUser: { name: 'kelly', email: 'korevec@gmail.com' },
+133 silly install resolved     maintainers: [ [Object] ],
+133 silly install resolved     dist:
+133 silly install resolved      { shasum: 'f43f7028141026ae48af2990a374633d1dab3d2b',
+133 silly install resolved        tarball: 'https://registry.npmjs.org/i2c/-/i2c-0.2.3.tgz' },
+133 silly install resolved     _npmOperationalInternal:
+133 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+133 silly install resolved        tmp: 'tmp/i2c-0.2.3.tgz_1466010042410_0.13896341202780604' },
+133 silly install resolved     directories: {},
+133 silly install resolved     _resolved: 'https://registry.npmjs.org/i2c/-/i2c-0.2.3.tgz' } ]
+134 info install i2c@0.2.3 into /Users/nathan/Projects/sandbox/node_modules/tsl2591
+135 info installOne i2c@0.2.3
+136 verbose installOne of i2c to /Users/nathan/Projects/sandbox/node_modules/tsl2591 not in flight; installing
+137 verbose correctMkdir /Users/nathan/.npm/_locks correctMkdir not in flight; initializing
+138 verbose lock using /Users/nathan/.npm/_locks/i2c-8bedcea5e11817af.lock for /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c
+139 silly install write writing i2c 0.2.3 to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c
+140 verbose unbuild node_modules/tsl2591/node_modules/i2c
+141 silly gentlyRm /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c is being purged from base /Users/nathan/Projects/sandbox
+142 verbose gentlyRm don't care about contents; nuking /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c
+143 verbose tar unpack /Users/nathan/.npm/i2c/0.2.3/package.tgz
+144 verbose tar unpacking to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c
+145 silly gentlyRm /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c is being purged
+146 verbose gentlyRm don't care about contents; nuking /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c
+147 silly gunzTarPerm modes [ '755', '644' ]
+148 silly gunzTarPerm extractEntry package.json
+149 silly gunzTarPerm extractEntry .npmignore
+150 silly gunzTarPerm extractEntry README.md
+151 silly gunzTarPerm extractEntry LICENSE
+152 silly gunzTarPerm extractEntry main.js
+153 silly gunzTarPerm extractEntry binding.gyp
+154 silly gunzTarPerm extractEntry examples/accelerometer/accel.coffee
+155 silly gunzTarPerm extractEntry examples/blinkm/blinkm.coffee
+156 silly gunzTarPerm extractEntry lib/i2c.coffee
+157 silly gunzTarPerm extractEntry src/i2c-dev.c
+158 silly gunzTarPerm extractEntry src/i2c-dev.h
+159 silly gunzTarPerm extractEntry src/i2c.cc
+160 verbose write writing to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/package.json
+161 info preinstall i2c@0.2.3
+162 verbose readDependencies loading dependencies from /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/package.json
+163 silly prepareForInstallMany adding bindings@1.2.1 from i2c dependencies
+164 silly prepareForInstallMany adding underscore@1.8.2 from i2c dependencies
+165 silly prepareForInstallMany adding coffee-script@1.9.1 from i2c dependencies
+166 silly prepareForInstallMany adding repl@0.1.3 from i2c dependencies
+167 silly prepareForInstallMany adding nan@~2.3.5 from i2c dependencies
+168 verbose readDependencies loading dependencies from /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/package.json
+169 silly cache add args [ 'bindings@1.2.1', null ]
+170 verbose cache add spec bindings@1.2.1
+171 silly cache add args [ 'underscore@1.8.2', null ]
+172 verbose cache add spec underscore@1.8.2
+173 silly cache add parsed spec Result {
+173 silly cache add   raw: 'bindings@1.2.1',
+173 silly cache add   scope: null,
+173 silly cache add   name: 'bindings',
+173 silly cache add   rawSpec: '1.2.1',
+173 silly cache add   spec: '1.2.1',
+173 silly cache add   type: 'version' }
+174 silly addNamed bindings@1.2.1
+175 verbose addNamed "1.2.1" is a plain semver version for bindings
+176 silly mapToRegistry name bindings
+177 silly mapToRegistry using default registry
+178 silly mapToRegistry registry https://registry.npmjs.org/
+179 silly mapToRegistry data Result {
+179 silly mapToRegistry   raw: 'bindings',
+179 silly mapToRegistry   scope: null,
+179 silly mapToRegistry   name: 'bindings',
+179 silly mapToRegistry   rawSpec: '',
+179 silly mapToRegistry   spec: 'latest',
+179 silly mapToRegistry   type: 'tag' }
+180 silly mapToRegistry uri https://registry.npmjs.org/bindings
+181 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
+182 silly cache add parsed spec Result {
+182 silly cache add   raw: 'underscore@1.8.2',
+182 silly cache add   scope: null,
+182 silly cache add   name: 'underscore',
+182 silly cache add   rawSpec: '1.8.2',
+182 silly cache add   spec: '1.8.2',
+182 silly cache add   type: 'version' }
+183 silly addNamed underscore@1.8.2
+184 verbose addNamed "1.8.2" is a plain semver version for underscore
+185 silly mapToRegistry name underscore
+186 silly mapToRegistry using default registry
+187 silly mapToRegistry registry https://registry.npmjs.org/
+188 silly mapToRegistry data Result {
+188 silly mapToRegistry   raw: 'underscore',
+188 silly mapToRegistry   scope: null,
+188 silly mapToRegistry   name: 'underscore',
+188 silly mapToRegistry   rawSpec: '',
+188 silly mapToRegistry   spec: 'latest',
+188 silly mapToRegistry   type: 'tag' }
+189 silly mapToRegistry uri https://registry.npmjs.org/underscore
+190 verbose addNameVersion registry:https://registry.npmjs.org/underscore not in flight; fetching
+191 silly cache add args [ 'coffee-script@1.9.1', null ]
+192 verbose cache add spec coffee-script@1.9.1
+193 silly cache add parsed spec Result {
+193 silly cache add   raw: 'coffee-script@1.9.1',
+193 silly cache add   scope: null,
+193 silly cache add   name: 'coffee-script',
+193 silly cache add   rawSpec: '1.9.1',
+193 silly cache add   spec: '1.9.1',
+193 silly cache add   type: 'version' }
+194 silly addNamed coffee-script@1.9.1
+195 verbose addNamed "1.9.1" is a plain semver version for coffee-script
+196 silly mapToRegistry name coffee-script
+197 silly mapToRegistry using default registry
+198 silly mapToRegistry registry https://registry.npmjs.org/
+199 silly mapToRegistry data Result {
+199 silly mapToRegistry   raw: 'coffee-script',
+199 silly mapToRegistry   scope: null,
+199 silly mapToRegistry   name: 'coffee-script',
+199 silly mapToRegistry   rawSpec: '',
+199 silly mapToRegistry   spec: 'latest',
+199 silly mapToRegistry   type: 'tag' }
+200 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+201 verbose addNameVersion registry:https://registry.npmjs.org/coffee-script not in flight; fetching
+202 silly cache add args [ 'repl@0.1.3', null ]
+203 verbose cache add spec repl@0.1.3
+204 silly cache add parsed spec Result {
+204 silly cache add   raw: 'repl@0.1.3',
+204 silly cache add   scope: null,
+204 silly cache add   name: 'repl',
+204 silly cache add   rawSpec: '0.1.3',
+204 silly cache add   spec: '0.1.3',
+204 silly cache add   type: 'version' }
+205 silly addNamed repl@0.1.3
+206 verbose addNamed "0.1.3" is a plain semver version for repl
+207 silly mapToRegistry name repl
+208 silly mapToRegistry using default registry
+209 silly mapToRegistry registry https://registry.npmjs.org/
+210 silly mapToRegistry data Result {
+210 silly mapToRegistry   raw: 'repl',
+210 silly mapToRegistry   scope: null,
+210 silly mapToRegistry   name: 'repl',
+210 silly mapToRegistry   rawSpec: '',
+210 silly mapToRegistry   spec: 'latest',
+210 silly mapToRegistry   type: 'tag' }
+211 silly mapToRegistry uri https://registry.npmjs.org/repl
+212 verbose addNameVersion registry:https://registry.npmjs.org/repl not in flight; fetching
+213 silly cache add args [ 'nan@~2.3.5', null ]
+214 verbose cache add spec nan@~2.3.5
+215 silly cache add parsed spec Result {
+215 silly cache add   raw: 'nan@~2.3.5',
+215 silly cache add   scope: null,
+215 silly cache add   name: 'nan',
+215 silly cache add   rawSpec: '~2.3.5',
+215 silly cache add   spec: '>=2.3.5 <2.4.0',
+215 silly cache add   type: 'range' }
+216 silly addNamed nan@>=2.3.5 <2.4.0
+217 verbose addNamed ">=2.3.5 <2.4.0" is a valid semver range for nan
+218 silly addNameRange { name: 'nan', range: '>=2.3.5 <2.4.0', hasData: false }
+219 silly mapToRegistry name nan
+220 silly mapToRegistry using default registry
+221 silly mapToRegistry registry https://registry.npmjs.org/
+222 silly mapToRegistry data Result {
+222 silly mapToRegistry   raw: 'nan',
+222 silly mapToRegistry   scope: null,
+222 silly mapToRegistry   name: 'nan',
+222 silly mapToRegistry   rawSpec: '',
+222 silly mapToRegistry   spec: 'latest',
+222 silly mapToRegistry   type: 'tag' }
+223 silly mapToRegistry uri https://registry.npmjs.org/nan
+224 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+225 verbose request uri https://registry.npmjs.org/repl
+226 verbose request no auth needed
+227 info attempt registry request try #1 at 1:28:30 PM
+228 http request GET https://registry.npmjs.org/repl
+229 verbose request uri https://registry.npmjs.org/bindings
+230 verbose request no auth needed
+231 info attempt registry request try #1 at 1:28:30 PM
+232 verbose etag W/"8dfe34716157e36596b3ba5e5fcfb617"
+233 verbose lastModified Wed, 27 Feb 2019 22:54:48 GMT
+234 http request GET https://registry.npmjs.org/bindings
+235 verbose request uri https://registry.npmjs.org/underscore
+236 verbose request no auth needed
+237 info attempt registry request try #1 at 1:28:30 PM
+238 verbose etag W/"582783eb-aa43"
+239 verbose lastModified Sat, 12 Nov 2016 21:04:43 GMT
+240 http request GET https://registry.npmjs.org/underscore
+241 verbose request uri https://registry.npmjs.org/coffee-script
+242 verbose request no auth needed
+243 info attempt registry request try #1 at 1:28:30 PM
+244 verbose etag "8MY5K5P60R4B3O3AKJHA5FXZG"
+245 http request GET https://registry.npmjs.org/coffee-script
+246 verbose request uri https://registry.npmjs.org/nan
+247 verbose request no auth needed
+248 info attempt registry request try #1 at 1:28:30 PM
+249 verbose etag W/"d9774cf846d746fcaab396a90dcaef66"
+250 verbose lastModified Sun, 24 Mar 2019 14:32:23 GMT
+251 http request GET https://registry.npmjs.org/nan
+252 http 200 https://registry.npmjs.org/coffee-script
+253 verbose headers { date: 'Sun, 31 Mar 2019 17:28:30 GMT',
+253 verbose headers   'content-type': 'application/json',
+253 verbose headers   'transfer-encoding': 'chunked',
+253 verbose headers   connection: 'keep-alive',
+253 verbose headers   'set-cookie': [ '__cfduid=db83b635b4f9bfaf655abc453de0513a61554053310; expires=Mon, 30-Mar-20 17:28:30 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+253 verbose headers   'cf-cache-status': 'HIT',
+253 verbose headers   'cache-control': 'max-age=300',
+253 verbose headers   'cf-ray': '4c040a46dc69cce4-EWR',
+253 verbose headers   etag: 'W/"e348fa9cf96aae5f9dce92ebdbbf5e68"',
+253 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+253 verbose headers   'last-modified': 'Tue, 01 Jan 2019 14:31:18 GMT',
+253 verbose headers   vary: 'accept-encoding, accept',
+253 verbose headers   'x-amz-meta-rev': '586-cb91fc672da5a33b420fac9f9b83b458',
+253 verbose headers   server: 'cloudflare',
+253 verbose headers   'content-encoding': 'gzip' }
+254 silly get cb [ 200,
+254 silly get   { date: 'Sun, 31 Mar 2019 17:28:30 GMT',
+254 silly get     'content-type': 'application/json',
+254 silly get     'transfer-encoding': 'chunked',
+254 silly get     connection: 'keep-alive',
+254 silly get     'set-cookie': [ '__cfduid=db83b635b4f9bfaf655abc453de0513a61554053310; expires=Mon, 30-Mar-20 17:28:30 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+254 silly get     'cf-cache-status': 'HIT',
+254 silly get     'cache-control': 'max-age=300',
+254 silly get     'cf-ray': '4c040a46dc69cce4-EWR',
+254 silly get     etag: 'W/"e348fa9cf96aae5f9dce92ebdbbf5e68"',
+254 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+254 silly get     'last-modified': 'Tue, 01 Jan 2019 14:31:18 GMT',
+254 silly get     vary: 'accept-encoding, accept',
+254 silly get     'x-amz-meta-rev': '586-cb91fc672da5a33b420fac9f9b83b458',
+254 silly get     server: 'cloudflare',
+254 silly get     'content-encoding': 'gzip' } ]
+255 verbose get saving coffee-script to /Users/nathan/.npm/registry.npmjs.org/coffee-script/.cache.json
+256 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+257 http 304 https://registry.npmjs.org/bindings
+258 verbose headers { date: 'Sun, 31 Mar 2019 17:28:30 GMT',
+258 verbose headers   connection: 'keep-alive',
+258 verbose headers   'set-cookie': [ '__cfduid=d8302390d4b00b63c29fbe128d2749af11554053310; expires=Mon, 30-Mar-20 17:28:30 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+258 verbose headers   'cf-cache-status': 'HIT',
+258 verbose headers   'cache-control': 'max-age=300',
+258 verbose headers   'cf-ray': '4c040a46dcce9272-EWR',
+258 verbose headers   etag: '"8dfe34716157e36596b3ba5e5fcfb617"',
+258 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+258 verbose headers   'last-modified': 'Wed, 27 Feb 2019 22:54:48 GMT',
+258 verbose headers   vary: 'accept-encoding, accept',
+258 verbose headers   'x-amz-meta-rev': '66-b1ca5aefc319d9a2058a07561bf4cc31',
+258 verbose headers   server: 'cloudflare' }
+259 silly get cb [ 304,
+259 silly get   { date: 'Sun, 31 Mar 2019 17:28:30 GMT',
+259 silly get     connection: 'keep-alive',
+259 silly get     'set-cookie': [ '__cfduid=d8302390d4b00b63c29fbe128d2749af11554053310; expires=Mon, 30-Mar-20 17:28:30 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+259 silly get     'cf-cache-status': 'HIT',
+259 silly get     'cache-control': 'max-age=300',
+259 silly get     'cf-ray': '4c040a46dcce9272-EWR',
+259 silly get     etag: '"8dfe34716157e36596b3ba5e5fcfb617"',
+259 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+259 silly get     'last-modified': 'Wed, 27 Feb 2019 22:54:48 GMT',
+259 silly get     vary: 'accept-encoding, accept',
+259 silly get     'x-amz-meta-rev': '66-b1ca5aefc319d9a2058a07561bf4cc31',
+259 silly get     server: 'cloudflare' } ]
+260 verbose etag https://registry.npmjs.org/bindings from cache
+261 verbose get saving bindings to /Users/nathan/.npm/registry.npmjs.org/bindings/.cache.json
+262 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+263 http 200 https://registry.npmjs.org/underscore
+264 verbose headers { date: 'Sun, 31 Mar 2019 17:28:30 GMT',
+264 verbose headers   'content-type': 'application/json',
+264 verbose headers   'transfer-encoding': 'chunked',
+264 verbose headers   connection: 'keep-alive',
+264 verbose headers   'set-cookie': [ '__cfduid=db83b635b4f9bfaf655abc453de0513a61554053310; expires=Mon, 30-Mar-20 17:28:30 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+264 verbose headers   'cf-cache-status': 'HIT',
+264 verbose headers   'cache-control': 'max-age=300',
+264 verbose headers   'cf-ray': '4c040a46dc65cce4-EWR',
+264 verbose headers   etag: 'W/"3d7598fb104a5b8d9be67d5d2e10efb0"',
+264 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+264 verbose headers   'last-modified': 'Sat, 05 Jan 2019 17:11:51 GMT',
+264 verbose headers   vary: 'accept-encoding, accept',
+264 verbose headers   'x-amz-meta-rev': '813-ad098945eba05700ba7d5c69507f7aa9',
+264 verbose headers   server: 'cloudflare',
+264 verbose headers   'content-encoding': 'gzip' }
+265 silly get cb [ 200,
+265 silly get   { date: 'Sun, 31 Mar 2019 17:28:30 GMT',
+265 silly get     'content-type': 'application/json',
+265 silly get     'transfer-encoding': 'chunked',
+265 silly get     connection: 'keep-alive',
+265 silly get     'set-cookie': [ '__cfduid=db83b635b4f9bfaf655abc453de0513a61554053310; expires=Mon, 30-Mar-20 17:28:30 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+265 silly get     'cf-cache-status': 'HIT',
+265 silly get     'cache-control': 'max-age=300',
+265 silly get     'cf-ray': '4c040a46dc65cce4-EWR',
+265 silly get     etag: 'W/"3d7598fb104a5b8d9be67d5d2e10efb0"',
+265 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+265 silly get     'last-modified': 'Sat, 05 Jan 2019 17:11:51 GMT',
+265 silly get     vary: 'accept-encoding, accept',
+265 silly get     'x-amz-meta-rev': '813-ad098945eba05700ba7d5c69507f7aa9',
+265 silly get     server: 'cloudflare',
+265 silly get     'content-encoding': 'gzip' } ]
+266 verbose get saving underscore to /Users/nathan/.npm/registry.npmjs.org/underscore/.cache.json
+267 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+268 warn deprecated coffee-script@1.9.1: CoffeeScript on NPM has moved to "coffeescript" (no hyphen)
+269 silly mapToRegistry name coffee-script
+270 silly mapToRegistry using default registry
+271 silly mapToRegistry registry https://registry.npmjs.org/
+272 silly mapToRegistry data Result {
+272 silly mapToRegistry   raw: 'coffee-script',
+272 silly mapToRegistry   scope: null,
+272 silly mapToRegistry   name: 'coffee-script',
+272 silly mapToRegistry   rawSpec: '',
+272 silly mapToRegistry   spec: 'latest',
+272 silly mapToRegistry   type: 'tag' }
+273 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+274 verbose addRemoteTarball https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz not in flight; adding
+275 verbose addRemoteTarball [ 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz',
+275 verbose addRemoteTarball   'c458d02200f460d064a79cb6ab1ee6e2c9ca1c31' ]
+276 info retry fetch attempt 1 at 1:28:30 PM
+277 info attempt registry request try #1 at 1:28:30 PM
+278 http fetch GET https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz
+279 silly mapToRegistry name underscore
+280 silly mapToRegistry using default registry
+281 silly mapToRegistry registry https://registry.npmjs.org/
+282 silly mapToRegistry data Result {
+282 silly mapToRegistry   raw: 'underscore',
+282 silly mapToRegistry   scope: null,
+282 silly mapToRegistry   name: 'underscore',
+282 silly mapToRegistry   rawSpec: '',
+282 silly mapToRegistry   spec: 'latest',
+282 silly mapToRegistry   type: 'tag' }
+283 silly mapToRegistry uri https://registry.npmjs.org/underscore
+284 verbose addRemoteTarball https://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz not in flight; adding
+285 verbose addRemoteTarball [ 'https://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz',
+285 verbose addRemoteTarball   '64df2eb590899de950782f3735190ba42ebf311d' ]
+286 silly cache afterAdd bindings@1.2.1
+287 verbose afterAdd /Users/nathan/.npm/bindings/1.2.1/package/package.json not in flight; writing
+288 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+289 info retry fetch attempt 1 at 1:28:30 PM
+290 info attempt registry request try #1 at 1:28:30 PM
+291 http fetch GET https://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz
+292 verbose afterAdd /Users/nathan/.npm/bindings/1.2.1/package/package.json written
+293 http 304 https://registry.npmjs.org/nan
+294 verbose headers { date: 'Sun, 31 Mar 2019 17:28:30 GMT',
+294 verbose headers   connection: 'keep-alive',
+294 verbose headers   'set-cookie': [ '__cfduid=d8cdef53824570b94972f6a561c9604091554053310; expires=Mon, 30-Mar-20 17:28:30 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+294 verbose headers   'cf-cache-status': 'HIT',
+294 verbose headers   'cache-control': 'max-age=300',
+294 verbose headers   'cf-ray': '4c040a46dfa19a1c-EWR',
+294 verbose headers   etag: '"d9774cf846d746fcaab396a90dcaef66"',
+294 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+294 verbose headers   'last-modified': 'Sun, 24 Mar 2019 14:32:23 GMT',
+294 verbose headers   vary: 'accept-encoding, accept',
+294 verbose headers   'x-amz-meta-rev': '186-083b72552a0fb3a089a4c5cb95d68c1a',
+294 verbose headers   server: 'cloudflare' }
+295 silly get cb [ 304,
+295 silly get   { date: 'Sun, 31 Mar 2019 17:28:30 GMT',
+295 silly get     connection: 'keep-alive',
+295 silly get     'set-cookie': [ '__cfduid=d8cdef53824570b94972f6a561c9604091554053310; expires=Mon, 30-Mar-20 17:28:30 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+295 silly get     'cf-cache-status': 'HIT',
+295 silly get     'cache-control': 'max-age=300',
+295 silly get     'cf-ray': '4c040a46dfa19a1c-EWR',
+295 silly get     etag: '"d9774cf846d746fcaab396a90dcaef66"',
+295 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+295 silly get     'last-modified': 'Sun, 24 Mar 2019 14:32:23 GMT',
+295 silly get     vary: 'accept-encoding, accept',
+295 silly get     'x-amz-meta-rev': '186-083b72552a0fb3a089a4c5cb95d68c1a',
+295 silly get     server: 'cloudflare' } ]
+296 verbose etag https://registry.npmjs.org/nan from cache
+297 verbose get saving nan to /Users/nathan/.npm/registry.npmjs.org/nan/.cache.json
+298 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+299 silly addNameRange number 2 { name: 'nan', range: '>=2.3.5 <2.4.0', hasData: true }
+300 silly addNameRange versions [ 'nan',
+300 silly addNameRange   [ '0.3.0-wip',
+300 silly addNameRange     '0.3.0-wip2',
+300 silly addNameRange     '0.3.0',
+300 silly addNameRange     '0.3.1',
+300 silly addNameRange     '0.3.2',
+300 silly addNameRange     '0.4.0',
+300 silly addNameRange     '0.4.1',
+300 silly addNameRange     '0.4.2',
+300 silly addNameRange     '0.4.3',
+300 silly addNameRange     '0.4.4',
+300 silly addNameRange     '0.5.0',
+300 silly addNameRange     '0.5.1',
+300 silly addNameRange     '0.5.2',
+300 silly addNameRange     '0.6.0',
+300 silly addNameRange     '0.7.0',
+300 silly addNameRange     '0.7.1',
+300 silly addNameRange     '0.8.0',
+300 silly addNameRange     '1.0.0',
+300 silly addNameRange     '1.1.0',
+300 silly addNameRange     '1.1.1',
+300 silly addNameRange     '1.1.2',
+300 silly addNameRange     '1.2.0',
+300 silly addNameRange     '1.3.0',
+300 silly addNameRange     '1.4.0',
+300 silly addNameRange     '1.4.1',
+300 silly addNameRange     '1.5.0',
+300 silly addNameRange     '1.4.2',
+300 silly addNameRange     '1.4.3',
+300 silly addNameRange     '1.5.1',
+300 silly addNameRange     '1.5.2',
+300 silly addNameRange     '1.6.0',
+300 silly addNameRange     '1.5.3',
+300 silly addNameRange     '1.6.1',
+300 silly addNameRange     '1.6.2',
+300 silly addNameRange     '1.7.0',
+300 silly addNameRange     '1.8.0',
+300 silly addNameRange     '1.8.1',
+300 silly addNameRange     '1.8.2',
+300 silly addNameRange     '1.8.3',
+300 silly addNameRange     '1.8.4',
+300 silly addNameRange     '1.9.0',
+300 silly addNameRange     '2.0.0',
+300 silly addNameRange     '2.0.1',
+300 silly addNameRange     '2.0.2',
+300 silly addNameRange     '2.0.3',
+300 silly addNameRange     '2.0.4',
+300 silly addNameRange     '2.0.5',
+300 silly addNameRange     '2.0.6',
+300 silly addNameRange     '2.0.7',
+300 silly addNameRange     '2.0.8',
+300 silly addNameRange     '2.0.9',
+300 silly addNameRange     '2.1.0',
+300 silly addNameRange     '2.2.0',
+300 silly addNameRange     '2.2.1',
+300 silly addNameRange     '2.3.0',
+300 silly addNameRange     '2.3.1',
+300 silly addNameRange     '2.3.2',
+300 silly addNameRange     '2.3.3',
+300 silly addNameRange     '2.3.4',
+300 silly addNameRange     '2.3.5',
+300 silly addNameRange     '2.4.0',
+300 silly addNameRange     '2.5.0',
+300 silly addNameRange     '2.5.1',
+300 silly addNameRange     '2.6.0',
+300 silly addNameRange     '2.6.1',
+300 silly addNameRange     '2.6.2',
+300 silly addNameRange     '2.7.0',
+300 silly addNameRange     '2.8.0',
+300 silly addNameRange     '2.9.1',
+300 silly addNameRange     '2.9.2',
+300 silly addNameRange     '2.10.0',
+300 silly addNameRange     '2.11.0',
+300 silly addNameRange     '2.11.1',
+300 silly addNameRange     '2.12.0',
+300 silly addNameRange     '2.12.1',
+300 silly addNameRange     '2.13.0',
+300 silly addNameRange     '2.13.1',
+300 silly addNameRange     '2.13.2' ] ]
+301 silly addNamed nan@2.3.5
+302 verbose addNamed "2.3.5" is a plain semver version for nan
+303 silly cache afterAdd nan@2.3.5
+304 verbose afterAdd /Users/nathan/.npm/nan/2.3.5/package/package.json not in flight; writing
+305 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+306 verbose afterAdd /Users/nathan/.npm/nan/2.3.5/package/package.json written
+307 http fetch 200 https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz
+308 http fetch 200 https://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz
+309 silly fetchAndShaCheck shasum 64df2eb590899de950782f3735190ba42ebf311d
+310 verbose addTmpTarball /var/folders/l3/m_1m2z4d3n11spvqvhdn06180000gn/T/npm-2057-46d89d03/registry.npmjs.org/underscore/-/underscore-1.8.2.tgz not in flight; adding
+311 verbose addTmpTarball already have metadata; skipping unpack for underscore@1.8.2
+312 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+313 silly cache afterAdd underscore@1.8.2
+314 verbose afterAdd /Users/nathan/.npm/underscore/1.8.2/package/package.json not in flight; writing
+315 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+316 verbose afterAdd /Users/nathan/.npm/underscore/1.8.2/package/package.json written
+317 silly fetchAndShaCheck shasum c458d02200f460d064a79cb6ab1ee6e2c9ca1c31
+318 verbose addTmpTarball /var/folders/l3/m_1m2z4d3n11spvqvhdn06180000gn/T/npm-2057-46d89d03/registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz not in flight; adding
+319 verbose addTmpTarball already have metadata; skipping unpack for coffee-script@1.9.1
+320 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+321 silly cache afterAdd coffee-script@1.9.1
+322 verbose afterAdd /Users/nathan/.npm/coffee-script/1.9.1/package/package.json not in flight; writing
+323 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+324 verbose afterAdd /Users/nathan/.npm/coffee-script/1.9.1/package/package.json written
+325 http 200 https://registry.npmjs.org/repl
+326 verbose headers { date: 'Sun, 31 Mar 2019 17:28:30 GMT',
+326 verbose headers   'content-type': 'application/json; charset=UTF-8',
+326 verbose headers   'transfer-encoding': 'chunked',
+326 verbose headers   connection: 'keep-alive',
+326 verbose headers   'set-cookie': [ '__cfduid=de3e226b813ee5f96aac257d73bbc7a711554053310; expires=Mon, 30-Mar-20 17:28:30 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+326 verbose headers   'cf-cache-status': 'MISS',
+326 verbose headers   'cache-control': 'max-age=300',
+326 verbose headers   'cf-ray': '4c040a466a9d9a22-EWR',
+326 verbose headers   etag: 'W/"c7f1b3c05a929ed06607fe7fb1a89e3b"',
+326 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+326 verbose headers   'last-modified': 'Sun, 27 May 2018 15:50:01 GMT',
+326 verbose headers   vary: 'accept-encoding, accept',
+326 verbose headers   server: 'cloudflare',
+326 verbose headers   'content-encoding': 'gzip' }
+327 silly get cb [ 200,
+327 silly get   { date: 'Sun, 31 Mar 2019 17:28:30 GMT',
+327 silly get     'content-type': 'application/json; charset=UTF-8',
+327 silly get     'transfer-encoding': 'chunked',
+327 silly get     connection: 'keep-alive',
+327 silly get     'set-cookie': [ '__cfduid=de3e226b813ee5f96aac257d73bbc7a711554053310; expires=Mon, 30-Mar-20 17:28:30 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+327 silly get     'cf-cache-status': 'MISS',
+327 silly get     'cache-control': 'max-age=300',
+327 silly get     'cf-ray': '4c040a466a9d9a22-EWR',
+327 silly get     etag: 'W/"c7f1b3c05a929ed06607fe7fb1a89e3b"',
+327 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+327 silly get     'last-modified': 'Sun, 27 May 2018 15:50:01 GMT',
+327 silly get     vary: 'accept-encoding, accept',
+327 silly get     server: 'cloudflare',
+327 silly get     'content-encoding': 'gzip' } ]
+328 verbose get saving repl to /Users/nathan/.npm/registry.npmjs.org/repl/.cache.json
+329 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+330 silly mapToRegistry name repl
+331 silly mapToRegistry using default registry
+332 silly mapToRegistry registry https://registry.npmjs.org/
+333 silly mapToRegistry data Result {
+333 silly mapToRegistry   raw: 'repl',
+333 silly mapToRegistry   scope: null,
+333 silly mapToRegistry   name: 'repl',
+333 silly mapToRegistry   rawSpec: '',
+333 silly mapToRegistry   spec: 'latest',
+333 silly mapToRegistry   type: 'tag' }
+334 silly mapToRegistry uri https://registry.npmjs.org/repl
+335 verbose addRemoteTarball https://registry.npmjs.org/repl/-/repl-0.1.3.tgz not in flight; adding
+336 verbose addRemoteTarball [ 'https://registry.npmjs.org/repl/-/repl-0.1.3.tgz',
+336 verbose addRemoteTarball   '2f05d42b0c88b43d05ccbda10ed14aeff5699b60' ]
+337 info retry fetch attempt 1 at 1:28:30 PM
+338 info attempt registry request try #1 at 1:28:30 PM
+339 http fetch GET https://registry.npmjs.org/repl/-/repl-0.1.3.tgz
+340 http fetch 200 https://registry.npmjs.org/repl/-/repl-0.1.3.tgz
+341 silly fetchAndShaCheck shasum 2f05d42b0c88b43d05ccbda10ed14aeff5699b60
+342 verbose addTmpTarball /var/folders/l3/m_1m2z4d3n11spvqvhdn06180000gn/T/npm-2057-46d89d03/registry.npmjs.org/repl/-/repl-0.1.3.tgz not in flight; adding
+343 verbose addTmpTarball already have metadata; skipping unpack for repl@0.1.3
+344 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+345 silly cache afterAdd repl@0.1.3
+346 verbose afterAdd /Users/nathan/.npm/repl/0.1.3/package/package.json not in flight; writing
+347 verbose correctMkdir /Users/nathan/.npm correctMkdir not in flight; initializing
+348 verbose afterAdd /Users/nathan/.npm/repl/0.1.3/package/package.json written
+349 silly install resolved [ { name: 'bindings',
+349 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+349 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+349 silly install resolved     version: '1.2.1',
+349 silly install resolved     author:
+349 silly install resolved      { name: 'Nathan Rajlich',
+349 silly install resolved        email: 'nathan@tootallnate.net',
+349 silly install resolved        url: 'http://tootallnate.net' },
+349 silly install resolved     repository:
+349 silly install resolved      { type: 'git',
+349 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+349 silly install resolved     main: './bindings.js',
+349 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+349 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+349 silly install resolved     license: 'MIT',
+349 silly install resolved     gitHead: 'e404152ee27f8478ccbc7122ee051246e8e5ec02',
+349 silly install resolved     _id: 'bindings@1.2.1',
+349 silly install resolved     scripts: {},
+349 silly install resolved     _shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+349 silly install resolved     _from: 'bindings@1.2.1',
+349 silly install resolved     _npmVersion: '1.4.14',
+349 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+349 silly install resolved     maintainers: [ [Object], [Object] ],
+349 silly install resolved     dist:
+349 silly install resolved      { shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+349 silly install resolved        tarball: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+349 silly install resolved     directories: {},
+349 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+349 silly install resolved     readme: 'ERROR: No README data found!' },
+349 silly install resolved   { name: 'nan',
+349 silly install resolved     version: '2.3.5',
+349 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8 -> 6 compatibility',
+349 silly install resolved     main: 'include_dirs.js',
+349 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+349 silly install resolved     scripts:
+349 silly install resolved      { test: 'tap --gc --stderr test/js/*-test.js',
+349 silly install resolved        'rebuild-tests': 'node-gyp rebuild --msvs_version=2013 --directory test',
+349 silly install resolved        docs: 'doc/.build.sh' },
+349 silly install resolved     contributors:
+349 silly install resolved      [ [Object],
+349 silly install resolved        [Object],
+349 silly install resolved        [Object],
+349 silly install resolved        [Object],
+349 silly install resolved        [Object],
+349 silly install resolved        [Object],
+349 silly install resolved        [Object] ],
+349 silly install resolved     devDependencies:
+349 silly install resolved      { bindings: '~1.2.1',
+349 silly install resolved        commander: '^2.8.1',
+349 silly install resolved        glob: '^5.0.14',
+349 silly install resolved        'node-gyp': '~3.0.1',
+349 silly install resolved        tap: '~0.7.1',
+349 silly install resolved        xtend: '~4.0.0' },
+349 silly install resolved     license: 'MIT',
+349 silly install resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+349 silly install resolved     homepage: 'https://github.com/nodejs/nan#readme',
+349 silly install resolved     _id: 'nan@2.3.5',
+349 silly install resolved     _shasum: '822a0dc266290ce4cd3a12282ca3e7e364668a08',
+349 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.3.5.tgz',
+349 silly install resolved     _from: 'nan@>=2.3.5 <2.4.0',
+349 silly install resolved     _npmVersion: '3.3.6',
+349 silly install resolved     _nodeVersion: '5.0.0',
+349 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+349 silly install resolved     dist:
+349 silly install resolved      { shasum: '822a0dc266290ce4cd3a12282ca3e7e364668a08',
+349 silly install resolved        tarball: 'https://registry.npmjs.org/nan/-/nan-2.3.5.tgz' },
+349 silly install resolved     maintainers: [ [Object], [Object] ],
+349 silly install resolved     _npmOperationalInternal:
+349 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+349 silly install resolved        tmp: 'tmp/nan-2.3.5.tgz_1464707164994_0.4295874561648816' },
+349 silly install resolved     directories: {},
+349 silly install resolved     readme: 'ERROR: No README data found!' },
+349 silly install resolved   { name: 'underscore',
+349 silly install resolved     description: 'JavaScript\'s functional programming helper library.',
+349 silly install resolved     homepage: 'http://underscorejs.org',
+349 silly install resolved     keywords: [ 'util', 'functional', 'server', 'client', 'browser' ],
+349 silly install resolved     author: { name: 'Jeremy Ashkenas', email: 'jeremy@documentcloud.org' },
+349 silly install resolved     repository:
+349 silly install resolved      { type: 'git',
+349 silly install resolved        url: 'git://github.com/jashkenas/underscore.git' },
+349 silly install resolved     main: 'underscore.js',
+349 silly install resolved     version: '1.8.2',
+349 silly install resolved     devDependencies:
+349 silly install resolved      { docco: '*',
+349 silly install resolved        eslint: '0.6.x',
+349 silly install resolved        karma: '~0.12.31',
+349 silly install resolved        'karma-qunit': '~0.1.4',
+349 silly install resolved        'qunit-cli': '~0.2.0',
+349 silly install resolved        'uglify-js': '2.4.x' },
+349 silly install resolved     scripts:
+349 silly install resolved      { test: 'npm run test-node && npm run lint',
+349 silly install resolved        lint: 'eslint underscore.js test/*.js',
+349 silly install resolved        'test-node': 'qunit-cli test/*.js',
+349 silly install resolved        'test-browser': 'npm i karma-phantomjs-launcher && ./node_modules/karma/bin/karma start',
+349 silly install resolved        build: 'uglifyjs underscore.js -c "evaluate=false" --comments "/    .*/" -m --source-map underscore-min.map -o underscore-min.js',
+349 silly install resolved        doc: 'docco underscore.js' },
+349 silly install resolved     license: 'MIT',
+349 silly install resolved     files:
+349 silly install resolved      [ 'underscore.js',
+349 silly install resolved        'underscore-min.js',
+349 silly install resolved        'underscore-min.map',
+349 silly install resolved        'LICENSE' ],
+349 silly install resolved     gitHead: '19db749b190a7cb5a8b7ab1aab42c0e9dc517250',
+349 silly install resolved     bugs: { url: 'https://github.com/jashkenas/underscore/issues' },
+349 silly install resolved     _id: 'underscore@1.8.2',
+349 silly install resolved     _shasum: '64df2eb590899de950782f3735190ba42ebf311d',
+349 silly install resolved     _from: 'underscore@1.8.2',
+349 silly install resolved     _npmVersion: '1.4.28',
+349 silly install resolved     _npmUser: { name: 'jashkenas', email: 'jashkenas@gmail.com' },
+349 silly install resolved     maintainers: [ [Object] ],
+349 silly install resolved     dist:
+349 silly install resolved      { shasum: '64df2eb590899de950782f3735190ba42ebf311d',
+349 silly install resolved        tarball: 'https://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz' },
+349 silly install resolved     directories: {},
+349 silly install resolved     _resolved: 'https://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz' },
+349 silly install resolved   { name: 'coffee-script',
+349 silly install resolved     description: 'Unfancy JavaScript',
+349 silly install resolved     keywords: [ 'javascript', 'language', 'coffeescript', 'compiler' ],
+349 silly install resolved     author: { name: 'Jeremy Ashkenas' },
+349 silly install resolved     version: '1.9.1',
+349 silly install resolved     license: 'MIT',
+349 silly install resolved     engines: { node: '>=0.8.0' },
+349 silly install resolved     directories: { lib: './lib/coffee-script' },
+349 silly install resolved     main: './lib/coffee-script/coffee-script',
+349 silly install resolved     bin: { coffee: './bin/coffee', cake: './bin/cake' },
+349 silly install resolved     preferGlobal: true,
+349 silly install resolved     scripts:
+349 silly install resolved      { test: 'node ./bin/cake test',
+349 silly install resolved        'test-harmony': 'node --harmony ./bin/cake test' },
+349 silly install resolved     homepage: 'http://coffeescript.org',
+349 silly install resolved     bugs: { url: 'https://github.com/jashkenas/coffeescript/issues' },
+349 silly install resolved     repository:
+349 silly install resolved      { type: 'git',
+349 silly install resolved        url: 'git://github.com/jashkenas/coffeescript.git' },
+349 silly install resolved     devDependencies:
+349 silly install resolved      { 'uglify-js': '~2.2',
+349 silly install resolved        jison: '>=0.2.0',
+349 silly install resolved        'highlight.js': '~8.0.0',
+349 silly install resolved        underscore: '~1.5.2',
+349 silly install resolved        docco: '~0.7.0' },
+349 silly install resolved     gitHead: '533ad8afe920b2dbf64ffb00efda45648242cc24',
+349 silly install resolved     _id: 'coffee-script@1.9.1',
+349 silly install resolved     _shasum: 'c458d02200f460d064a79cb6ab1ee6e2c9ca1c31',
+349 silly install resolved     _from: 'coffee-script@1.9.1',
+349 silly install resolved     _npmVersion: '1.4.28',
+349 silly install resolved     _npmUser: { name: 'jashkenas', email: 'jashkenas@gmail.com' },
+349 silly install resolved     maintainers: [ [Object], [Object] ],
+349 silly install resolved     dist:
+349 silly install resolved      { shasum: 'c458d02200f460d064a79cb6ab1ee6e2c9ca1c31',
+349 silly install resolved        tarball: 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz' },
+349 silly install resolved     deprecated: 'CoffeeScript on NPM has moved to "coffeescript" (no hyphen)',
+349 silly install resolved     _resolved: 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz' },
+349 silly install resolved   { name: 'repl',
+349 silly install resolved     author: { name: 'Firejune', url: 'http://firejune.com/' },
+349 silly install resolved     version: '0.1.3',
+349 silly install resolved     description: 'A simple fast template libray.',
+349 silly install resolved     homepage: 'http://github.com/firejune/repl',
+349 silly install resolved     keywords: [ 'template', 'engine', 'repl' ],
+349 silly install resolved     main: 'lib/template',
+349 silly install resolved     directories: { lib: 'lib' },
+349 silly install resolved     repository: { type: 'git', url: 'git://github.com/firejune/repl.git' },
+349 silly install resolved     licenses: [ [Object] ],
+349 silly install resolved     bugs: { url: 'http://github.com/firejune/repl/issues' },
+349 silly install resolved     engines: { node: '>= 0.4.0' },
+349 silly install resolved     _npmUser: { name: 'firejune', email: 'to@firejune.com' },
+349 silly install resolved     _id: 'repl@0.1.3',
+349 silly install resolved     dependencies: {},
+349 silly install resolved     devDependencies: {},
+349 silly install resolved     _engineSupported: true,
+349 silly install resolved     _npmVersion: '1.0.94',
+349 silly install resolved     _nodeVersion: 'v0.4.12',
+349 silly install resolved     _defaultsLoaded: true,
+349 silly install resolved     dist:
+349 silly install resolved      { shasum: '2f05d42b0c88b43d05ccbda10ed14aeff5699b60',
+349 silly install resolved        tarball: 'https://registry.npmjs.org/repl/-/repl-0.1.3.tgz' },
+349 silly install resolved     maintainers: [ [Object] ],
+349 silly install resolved     _shasum: '2f05d42b0c88b43d05ccbda10ed14aeff5699b60',
+349 silly install resolved     _resolved: 'https://registry.npmjs.org/repl/-/repl-0.1.3.tgz',
+349 silly install resolved     _from: 'repl@0.1.3' } ]
+350 info install bindings@1.2.1 into /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c
+351 info install nan@2.3.5 into /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c
+352 info install underscore@1.8.2 into /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c
+353 info install coffee-script@1.9.1 into /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c
+354 info install repl@0.1.3 into /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c
+355 info installOne bindings@1.2.1
+356 verbose installOne of bindings to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c not in flight; installing
+357 verbose correctMkdir /Users/nathan/.npm/_locks correctMkdir not in flight; initializing
+358 info installOne nan@2.3.5
+359 verbose installOne of nan to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c not in flight; installing
+360 verbose correctMkdir /Users/nathan/.npm/_locks correctMkdir not in flight; initializing
+361 info installOne underscore@1.8.2
+362 verbose installOne of underscore to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c not in flight; installing
+363 verbose correctMkdir /Users/nathan/.npm/_locks correctMkdir not in flight; initializing
+364 info installOne coffee-script@1.9.1
+365 verbose installOne of coffee-script to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c not in flight; installing
+366 verbose correctMkdir /Users/nathan/.npm/_locks correctMkdir not in flight; initializing
+367 info installOne repl@0.1.3
+368 verbose installOne of repl to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c not in flight; installing
+369 verbose correctMkdir /Users/nathan/.npm/_locks correctMkdir not in flight; initializing
+370 verbose lock using /Users/nathan/.npm/_locks/bindings-8c4402c85cb95925.lock for /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/bindings
+371 verbose lock using /Users/nathan/.npm/_locks/nan-69efe66a9efbe020.lock for /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/nan
+372 silly install write writing bindings 1.2.1 to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/bindings
+373 verbose lock using /Users/nathan/.npm/_locks/coffee-script-c4ef2eb3152ed511.lock for /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/coffee-script
+374 silly install write writing nan 2.3.5 to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/nan
+375 verbose lock using /Users/nathan/.npm/_locks/underscore-a080be8590e263ad.lock for /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/underscore
+376 verbose lock using /Users/nathan/.npm/_locks/repl-5e2761fbf2a60131.lock for /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/repl
+377 silly install write writing coffee-script 1.9.1 to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/coffee-script
+378 silly install write writing underscore 1.8.2 to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/underscore
+379 silly install write writing repl 0.1.3 to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/repl
+380 verbose unbuild node_modules/tsl2591/node_modules/i2c/node_modules/bindings
+381 verbose unbuild node_modules/tsl2591/node_modules/i2c/node_modules/nan
+382 verbose unbuild node_modules/tsl2591/node_modules/i2c/node_modules/underscore
+383 verbose unbuild node_modules/tsl2591/node_modules/i2c/node_modules/repl
+384 verbose unbuild node_modules/tsl2591/node_modules/i2c/node_modules/coffee-script
+385 silly gentlyRm /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/bindings is being purged from base /Users/nathan/Projects/sandbox
+386 verbose gentlyRm don't care about contents; nuking /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/bindings
+387 silly gentlyRm /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/nan is being purged from base /Users/nathan/Projects/sandbox
+388 verbose gentlyRm don't care about contents; nuking /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/nan
+389 verbose tar unpack /Users/nathan/.npm/bindings/1.2.1/package.tgz
+390 verbose tar unpacking to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/bindings
+391 silly gentlyRm /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/bindings is being purged
+392 verbose gentlyRm don't care about contents; nuking /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/bindings
+393 silly gentlyRm /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/underscore is being purged from base /Users/nathan/Projects/sandbox
+394 verbose gentlyRm don't care about contents; nuking /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/underscore
+395 verbose tar unpack /Users/nathan/.npm/nan/2.3.5/package.tgz
+396 verbose tar unpacking to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/nan
+397 silly gentlyRm /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/nan is being purged
+398 verbose gentlyRm don't care about contents; nuking /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/nan
+399 silly gentlyRm /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/repl is being purged from base /Users/nathan/Projects/sandbox
+400 verbose gentlyRm don't care about contents; nuking /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/repl
+401 silly gunzTarPerm modes [ '755', '644' ]
+402 silly gentlyRm /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/coffee-script is being purged from base /Users/nathan/Projects/sandbox
+403 verbose gentlyRm don't care about contents; nuking /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/coffee-script
+404 verbose tar unpack /Users/nathan/.npm/underscore/1.8.2/package.tgz
+405 verbose tar unpacking to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/underscore
+406 silly gentlyRm /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/underscore is being purged
+407 verbose gentlyRm don't care about contents; nuking /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/underscore
+408 silly gunzTarPerm modes [ '755', '644' ]
+409 verbose tar unpack /Users/nathan/.npm/repl/0.1.3/package.tgz
+410 verbose tar unpacking to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/repl
+411 silly gentlyRm /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/repl is being purged
+412 verbose gentlyRm don't care about contents; nuking /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/repl
+413 verbose tar unpack /Users/nathan/.npm/coffee-script/1.9.1/package.tgz
+414 verbose tar unpacking to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/coffee-script
+415 silly gentlyRm /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/coffee-script is being purged
+416 verbose gentlyRm don't care about contents; nuking /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/coffee-script
+417 silly gunzTarPerm modes [ '755', '644' ]
+418 silly gunzTarPerm modes [ '755', '644' ]
+419 silly gunzTarPerm modes [ '755', '644' ]
+420 silly gunzTarPerm extractEntry package.json
+421 silly gunzTarPerm extractEntry package.json
+422 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+423 silly gunzTarPerm extractEntry package.json
+424 silly gunzTarPerm extractEntry test.js
+425 silly gunzTarPerm extractEntry package.json
+426 silly gunzTarPerm extractEntry README.md
+427 silly gunzTarPerm extractEntry bindings.js
+428 silly gunzTarPerm extractEntry README.md
+429 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+430 silly gunzTarPerm extractEntry README.md
+431 silly gunzTarPerm extractEntry LICENSE
+432 silly gunzTarPerm extractEntry .npmignore
+433 silly gunzTarPerm extractEntry README
+434 silly gunzTarPerm extractEntry README.md
+435 silly gunzTarPerm extractEntry package.json
+436 silly gunzTarPerm extractEntry include_dirs.js
+437 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+438 silly gunzTarPerm extractEntry nan_converters.h
+439 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 420 ]
+440 silly gunzTarPerm extractEntry LICENSE.md
+441 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+442 silly gunzTarPerm extractEntry doc/node_misc.md
+443 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 420 ]
+444 silly gunzTarPerm extractEntry README.md
+445 silly gunzTarPerm extractEntry underscore.js
+446 silly gunzTarPerm extractEntry underscore-min.js
+447 silly gunzTarPerm extractEntry underscore-min.map
+448 silly gunzTarPerm extractEntry index.js
+449 silly gunzTarPerm extractEntry lib/repl.js
+450 silly gunzTarPerm extractEntry LICENSE
+451 silly gunzTarPerm extractEntry doc/asyncworker.md
+452 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 420 ]
+453 silly gunzTarPerm extractEntry register.js
+454 silly gunzTarPerm extractEntry repl.js
+455 silly gunzTarPerm extractEntry doc/callback.md
+456 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 420 ]
+457 silly gunzTarPerm extractEntry doc/converters.md
+458 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 420 ]
+459 silly gunzTarPerm extractEntry bin/cake
+460 silly gunzTarPerm extractEntry bin/coffee
+461 silly gunzTarPerm extractEntry doc/errors.md
+462 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 420 ]
+463 silly gunzTarPerm extractEntry doc/maybe_types.md
+464 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 420 ]
+465 verbose write writing to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/bindings/package.json
+466 silly gunzTarPerm extractEntry bower.json
+467 silly gunzTarPerm extractEntry lib/coffee-script/browser.js
+468 silly gunzTarPerm extractEntry doc/methods.md
+469 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 420 ]
+470 silly gunzTarPerm extractEntry doc/new.md
+471 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 420 ]
+472 info preinstall bindings@1.2.1
+473 verbose readDependencies loading dependencies from /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/bindings/package.json
+474 silly gunzTarPerm extractEntry doc/buffers.md
+475 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 420 ]
+476 silly gunzTarPerm extractEntry doc/object_wrappers.md
+477 silly gunzTarPerm modified mode [ 'doc/object_wrappers.md', 436, 420 ]
+478 verbose readDependencies loading dependencies from /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/bindings/package.json
+479 silly gunzTarPerm extractEntry lib/coffee-script/grammar.js
+480 silly gunzTarPerm extractEntry lib/coffee-script/helpers.js
+481 silly install resolved []
+482 verbose about to build /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/bindings
+483 info build /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/bindings
+484 verbose write writing to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/repl/package.json
+485 silly gunzTarPerm extractEntry lib/coffee-script/index.js
+486 silly gunzTarPerm extractEntry lib/coffee-script/lexer.js
+487 info linkStuff bindings@1.2.1
+488 silly linkStuff bindings@1.2.1 has /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules as its parent node_modules
+489 silly gunzTarPerm extractEntry doc/persistent.md
+490 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 420 ]
+491 silly gunzTarPerm extractEntry doc/scopes.md
+492 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 420 ]
+493 info preinstall repl@0.1.3
+494 verbose readDependencies loading dependencies from /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/repl/package.json
+495 silly gunzTarPerm extractEntry lib/coffee-script/command.js
+496 silly gunzTarPerm extractEntry lib/coffee-script/optparse.js
+497 silly gunzTarPerm extractEntry doc/script.md
+498 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 420 ]
+499 silly gunzTarPerm extractEntry doc/string_bytes.md
+500 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 420 ]
+501 verbose linkBins bindings@1.2.1
+502 verbose linkMans bindings@1.2.1
+503 verbose rebuildBundles bindings@1.2.1
+504 info install bindings@1.2.1
+505 verbose write writing to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/underscore/package.json
+506 info postinstall bindings@1.2.1
+507 silly gunzTarPerm extractEntry lib/coffee-script/parser.js
+508 silly gunzTarPerm extractEntry lib/coffee-script/register.js
+509 verbose readDependencies loading dependencies from /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/repl/package.json
+510 verbose unlock done using /Users/nathan/.npm/_locks/bindings-8c4402c85cb95925.lock for /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/bindings
+511 info preinstall underscore@1.8.2
+512 silly gunzTarPerm extractEntry doc/v8_internals.md
+513 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 420 ]
+514 silly gunzTarPerm extractEntry doc/v8_misc.md
+515 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 420 ]
+516 verbose readDependencies loading dependencies from /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/underscore/package.json
+517 silly gunzTarPerm extractEntry lib/coffee-script/repl.js
+518 silly gunzTarPerm extractEntry lib/coffee-script/rewriter.js
+519 silly install resolved []
+520 verbose about to build /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/repl
+521 info build /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/repl
+522 silly gunzTarPerm extractEntry nan.h
+523 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+524 verbose readDependencies loading dependencies from /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/underscore/package.json
+525 silly gunzTarPerm extractEntry lib/coffee-script/coffee-script.js
+526 info linkStuff repl@0.1.3
+527 silly linkStuff repl@0.1.3 has /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules as its parent node_modules
+528 silly gunzTarPerm extractEntry nan_callbacks.h
+529 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 420 ]
+530 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+531 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 420 ]
+532 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+533 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 420 ]
+534 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+535 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 420 ]
+536 silly install resolved []
+537 verbose about to build /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/underscore
+538 info build /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/underscore
+539 verbose linkBins repl@0.1.3
+540 verbose linkMans repl@0.1.3
+541 verbose rebuildBundles repl@0.1.3
+542 silly gunzTarPerm extractEntry lib/coffee-script/scope.js
+543 silly gunzTarPerm extractEntry lib/coffee-script/cake.js
+544 silly gunzTarPerm extractEntry lib/coffee-script/sourcemap.js
+545 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+546 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 420 ]
+547 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+548 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+549 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+550 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+551 info install repl@0.1.3
+552 silly gunzTarPerm extractEntry lib/coffee-script/nodes.js
+553 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+554 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 420 ]
+555 info postinstall repl@0.1.3
+556 info linkStuff underscore@1.8.2
+557 silly linkStuff underscore@1.8.2 has /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules as its parent node_modules
+558 verbose unlock done using /Users/nathan/.npm/_locks/repl-5e2761fbf2a60131.lock for /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/repl
+559 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+560 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 420 ]
+561 silly gunzTarPerm extractEntry nan_new.h
+562 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+563 silly gunzTarPerm extractEntry CNAME
+564 verbose linkBins underscore@1.8.2
+565 verbose linkMans underscore@1.8.2
+566 verbose rebuildBundles underscore@1.8.2
+567 info install underscore@1.8.2
+568 info postinstall underscore@1.8.2
+569 verbose unlock done using /Users/nathan/.npm/_locks/underscore-a080be8590e263ad.lock for /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/underscore
+570 silly gunzTarPerm extractEntry CONTRIBUTING.md
+571 silly gunzTarPerm extractEntry nan_object_wrap.h
+572 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 420 ]
+573 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+574 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 420 ]
+575 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+576 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 420 ]
+577 silly gunzTarPerm extractEntry nan_string_bytes.h
+578 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+579 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+580 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 420 ]
+581 silly gunzTarPerm extractEntry nan_weak.h
+582 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 420 ]
+583 silly gunzTarPerm extractEntry CHANGELOG.md
+584 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+585 silly gunzTarPerm extractEntry tools/package.json
+586 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 420 ]
+587 silly gunzTarPerm extractEntry tools/README.md
+588 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 420 ]
+589 silly gunzTarPerm extractEntry tools/1to2.js
+590 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 493 ]
+591 verbose write writing to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/coffee-script/package.json
+592 info preinstall coffee-script@1.9.1
+593 verbose readDependencies loading dependencies from /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/coffee-script/package.json
+594 verbose readDependencies loading dependencies from /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/coffee-script/package.json
+595 silly install resolved []
+596 verbose about to build /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/coffee-script
+597 info build /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/coffee-script
+598 info linkStuff coffee-script@1.9.1
+599 silly linkStuff coffee-script@1.9.1 has /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules as its parent node_modules
+600 verbose linkBins coffee-script@1.9.1
+601 verbose link bins [ { coffee: './bin/coffee', cake: './bin/cake' },
+601 verbose link bins   '/Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/.bin',
+601 verbose link bins   false ]
+602 verbose linkMans coffee-script@1.9.1
+603 verbose rebuildBundles coffee-script@1.9.1
+604 silly gentlyRm /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/.bin/coffee is being purged
+605 verbose gentlyRm don't care about contents; nuking /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/.bin/coffee
+606 silly gentlyRm /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/.bin/cake is being purged
+607 verbose gentlyRm don't care about contents; nuking /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/.bin/cake
+608 info install coffee-script@1.9.1
+609 info postinstall coffee-script@1.9.1
+610 verbose unlock done using /Users/nathan/.npm/_locks/coffee-script-c4ef2eb3152ed511.lock for /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/coffee-script
+611 verbose write writing to /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/nan/package.json
+612 info preinstall nan@2.3.5
+613 verbose readDependencies loading dependencies from /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/nan/package.json
+614 verbose readDependencies loading dependencies from /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/nan/package.json
+615 silly install resolved []
+616 verbose about to build /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/nan
+617 info build /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/nan
+618 info linkStuff nan@2.3.5
+619 silly linkStuff nan@2.3.5 has /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules as its parent node_modules
+620 verbose linkBins nan@2.3.5
+621 verbose linkMans nan@2.3.5
+622 verbose rebuildBundles nan@2.3.5
+623 info install nan@2.3.5
+624 info postinstall nan@2.3.5
+625 verbose unlock done using /Users/nathan/.npm/_locks/nan-69efe66a9efbe020.lock for /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c/node_modules/nan
+626 verbose about to build /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c
+627 info build /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c
+628 info linkStuff i2c@0.2.3
+629 silly linkStuff i2c@0.2.3 has /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules as its parent node_modules
+630 verbose linkBins i2c@0.2.3
+631 verbose linkMans i2c@0.2.3
+632 verbose rebuildBundles i2c@0.2.3
+633 verbose rebuildBundles [ '.bin', 'bindings', 'coffee-script', 'nan', 'repl', 'underscore' ]
+634 info install i2c@0.2.3
+635 verbose unsafe-perm in lifecycle true
+636 info i2c@0.2.3 Failed to exec install script
+637 verbose unlock done using /Users/nathan/.npm/_locks/i2c-8bedcea5e11817af.lock for /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c
+638 verbose about to build /Users/nathan/Projects/sandbox/node_modules/tsl2591
+639 verbose unlock done using /Users/nathan/.npm/_locks/tsl2591-043afc4a6baff098.lock for /Users/nathan/Projects/sandbox/node_modules/tsl2591
+640 verbose stack Error: i2c@0.2.3 install: `node-gyp rebuild`
+640 verbose stack Exit status 1
+640 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:217:16)
+640 verbose stack     at emitTwo (events.js:87:13)
+640 verbose stack     at EventEmitter.emit (events.js:172:7)
+640 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+640 verbose stack     at emitTwo (events.js:87:13)
+640 verbose stack     at ChildProcess.emit (events.js:172:7)
+640 verbose stack     at maybeClose (internal/child_process.js:827:16)
+640 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+641 verbose pkgid i2c@0.2.3
+642 verbose cwd /Users/nathan/Projects/sandbox
+643 error Darwin 15.6.0
+644 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "tsl2591"
+645 error node v4.4.5
+646 error npm  v2.15.5
+647 error code ELIFECYCLE
+648 error i2c@0.2.3 install: `node-gyp rebuild`
+648 error Exit status 1
+649 error Failed at the i2c@0.2.3 install script 'node-gyp rebuild'.
+649 error This is most likely a problem with the i2c package,
+649 error not with npm itself.
+649 error Tell the author that this fails on your system:
+649 error     node-gyp rebuild
+649 error You can get information on how to open an issue for this project with:
+649 error     npm bugs i2c
+649 error Or if that isn't available, you can get their info via:
+649 error
+649 error     npm owner ls i2c
+649 error There is likely additional logging output above.
+650 verbose exit [ 1, true ]
+651 verbose unbuild node_modules/tsl2591/node_modules/i2c
+652 info preuninstall i2c@0.2.3
+653 info uninstall i2c@0.2.3
+654 verbose unbuild rmStuff i2c@0.2.3 from /Users/nathan/Projects/sandbox/node_modules
+655 verbose unbuild rmStuff in /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules
+656 info postuninstall i2c@0.2.3
+657 silly gentlyRm /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c is being purged from base /Users/nathan/Projects/sandbox
+658 verbose gentlyRm don't care about contents; nuking /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c
+659 silly vacuum-fs purging /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules/i2c
+660 silly vacuum-fs removing /Users/nathan/Projects/sandbox/node_modules/tsl2591/node_modules
+661 silly vacuum-fs quitting because other entries in /Users/nathan/Projects/sandbox/node_modules/tsl2591
+662 verbose unbuild node_modules/tsl2591
+663 info preuninstall tsl2591@0.2.0
+664 info uninstall tsl2591@0.2.0
+665 verbose unbuild rmStuff tsl2591@0.2.0 from /Users/nathan/Projects/sandbox/node_modules
+666 info postuninstall tsl2591@0.2.0
+667 silly gentlyRm /Users/nathan/Projects/sandbox/node_modules/tsl2591 is being purged from base /Users/nathan/Projects/sandbox
+668 verbose gentlyRm don't care about contents; nuking /Users/nathan/Projects/sandbox/node_modules/tsl2591
+669 silly vacuum-fs purging /Users/nathan/Projects/sandbox/node_modules/tsl2591
+670 silly vacuum-fs quitting because other entries in /Users/nathan/Projects/sandbox/node_modules

@@ -9,6 +9,7 @@
   "author": "Nathan Offutt <noffutt@onetwosee.com> (http://nathanoffutt.com/)",
   "license": "ISC",
   "dependencies": {
+  	"tsl2591": "^0.2.0",
     "inkyphat": "^1.1.0",
     "rpi-gpio": "^2.1.3",
     "rpi-gpio-buttons": "^1.1.1"
