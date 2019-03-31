@@ -119,6 +119,7 @@ class App {
 
   }
   cleanup(){
+  	console.log('turning off leds');
   	this.leds.write( this.configs.led_gpios.ready, false );
   	this.leds.write( this.configs.led_gpios.active, false );
   }
