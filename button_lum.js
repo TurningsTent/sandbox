@@ -21,7 +21,7 @@ class App {
   	gpio.setMode( gpio.MODE_BCM );
 
   	this.leds.setup( config.led_gpios.active, gpio.DIR_OUT ).then( () => {
-	  	console.log('LEDs ready!');
+	  	console.log('LEDs ready!',config.led_gpios.active);
 	  	this.leds_ready = true;
 	  }).catch( err => {
 	      console.log('Error: ', err.toString() );
@@ -50,7 +50,8 @@ class App {
   	if( this.sensor_ready && this.leds_ready ){
   		this.leds.write( this.configs.led_gpios.active, true );
   		this.lux_sensor.readLuminosity( ( err, data ) => {
-  			setTimeout( () => { this.leds.write( this.configs.led_gpios.active, false ) },1000 );
+  			//setTimeout( () => { this.leds.write( this.configs.led_gpios.active, false ) },1000 );
+  			this.leds.write( this.configs.led_gpios.active, false );
 	      if (err) {
 	          console.log(err);
 	      } else {
@@ -69,7 +70,7 @@ class App {
 let app = new App({
 	button_gpios: [4],
 	led_gpios:{
-		active: 11
+		active: 17
 	},
 	lux_sensor: {
 		AGAIN: 0,
