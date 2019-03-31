@@ -29,7 +29,7 @@ class App {
   }
 
   onButtonPress( pin ){
-  	console.log( 'pressed: ',pin, clickCount );
+  	console.log( 'pressed: ',pin );
   	if( this.sensor_ready ){
   		this.lux_sensor.readLuminosity( ( err, data ) => {
 	      if (err) {
