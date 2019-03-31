@@ -13,8 +13,11 @@ class App {
 
   	this.configs = config;
 
-  	this.sensor_ready = false;
-  	this.leds_ready = false;
+  	this.states = {
+  		reading: false,
+  		sensor_ready: false,
+  		leds_ready: false
+  	};
 
   	this.buttons = rpi_gpio_buttons( config.button_gpios, { mode: rpi_gpio_buttons.MODE_BCM });
   	this.buttons.setTiming({ pressed: 10 });
@@ -24,7 +27,7 @@ class App {
 
   	this.leds.setup( config.led_gpios.active, gpio.DIR_OUT ).then( () => {
 	  	console.log('LEDs ready!',config.led_gpios.active);
-	  	this.leds_ready = true;
+	  	this.states.leds_ready = true;
 	  }).catch( err => {
 	      console.log('Error: ', err.toString() );
 	  });
@@ -41,7 +44,7 @@ class App {
         //TODO show error on screen, make user restart
 	    } else {
         console.log('TSL2591 ready');
-        this.sensor_ready = true;
+        this.states.sensor_ready = true;
 	    }
 		});
 
@@ -50,18 +53,20 @@ class App {
   onButtonPress( pin ){
   	//TODO make sure state is ready
   	console.log( 'pressed: ',pin );
-  	if( this.sensor_ready && this.leds_ready ){
+  	if( this.states.sensor_ready && this.states.leds_ready && !this.states.reading ){
+  		this.states.reading = true;
   		this.leds.write( this.configs.led_gpios.active, true );
   		this.takeReadings( ( err, data ) => {
   			this.leds.write( this.configs.led_gpios.active, false );
   			if (err) {
 	          console.log(err);
 	      } else {
+	      	this.states.reading = false;
 	          console.log(data);
 	      }
   		});
   	} else {
-  		console.log("Lux Sensor not ready yet");
+  		console.log("Cannot take reading at this time");
   	}
 
   }
