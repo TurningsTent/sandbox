@@ -1,6 +1,7 @@
 const rpi_gpio_buttons = require('rpi-gpio-buttons');
 const tsl2591 = require('tsl2591');
 const gpio = require('rpi-gpio');
+const async = require('async');
 
 let gpiop = gpio.promise;
 gpio.setMode( gpio.MODE_BCM );
