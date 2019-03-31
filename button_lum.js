@@ -118,6 +118,10 @@ class App {
     });
 
   }
+  cleanup(){
+  	this.leds.write( this.configs.led_gpios.ready, false );
+  	this.leds.write( this.configs.led_gpios.active, false );
+  }
 
 }
 
@@ -144,7 +148,6 @@ process.on('SIGUSR2', exitHandler.bind(null, {exit:true}));
 process.on('uncaughtException', exitHandler.bind(null, {exit:true}));
 
 function exitHandler(options, exitCode) {
-    if (options.cleanup) console.log('clean');
-    if (exitCode || exitCode === 0) console.log(exitCode);
+    if (options.cleanup) app.cleanup();
     if (options.exit) process.exit();
 }
