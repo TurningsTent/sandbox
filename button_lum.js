@@ -67,9 +67,11 @@ class App {
 
   takeReadings( cb ){
 
-  	async.times( this.configs.readings, ( n, next ) => {
+  	async.timesSeries( this.configs.readings, ( n, next ) => {
   		this.takeReading( ( err, result ) => {
-  			next( err, result );
+  			setTimeout( () => {
+  				next( err, result );
+  			}, this.configs.reading_timeout );
   		});
 		}, ( err, results ) => {
 			cb( err, results );
@@ -103,5 +105,6 @@ let app = new App({
 		AGAIN: 0,
 		ATIME: 1
 	},
-	readings: 20
+	readings: 20,
+	reading_timeout: 200
 });
