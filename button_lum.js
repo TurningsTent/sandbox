@@ -73,7 +73,8 @@ class App {
   		memo.ir += reading.ir;
   		return memo;
   	}, {
-			vis_ir: 0, ir: 0
+			vis_ir: 0,
+			ir: 0
 		});
 
 		return {
@@ -81,7 +82,6 @@ class App {
 			ir: ( sums.ir / results.length ).toFixed(2)
 		}
 
-  		.
   }
 
   takeReadings( cb ){
