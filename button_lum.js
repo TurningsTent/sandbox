@@ -126,7 +126,7 @@ let app = new App({
 	button_gpios: [4],
 	led_gpios:{
 		active: 17,
-		ready: 27
+		ready: 16
 	},
 	lux_sensor: {
 		AGAIN: 2,
