@@ -122,7 +122,7 @@ let app = new App({
 		active: 17
 	},
 	lux_sensor: {
-		AGAIN: 0,
+		AGAIN: 2,
 		ATIME: 1
 	},
 	readings: 50,
