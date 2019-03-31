@@ -82,7 +82,6 @@ class App {
   takeReading( cb ){
 
   	this.lux_sensor.readLuminosity( ( err, data ) => {
-			this.leds.write( this.configs.led_gpios.active, false );
       cb( err, data );
     });
 
@@ -100,6 +99,6 @@ let app = new App({
 		AGAIN: 0,
 		ATIME: 1
 	},
-	readings: 20,
+	readings: 100,
 	reading_timeout: 200
 });
