@@ -102,6 +102,7 @@ class App {
   takeReading( cb ){
 
   	this.lux_sensor.readLuminosity( ( err, data ) => {
+  		console.log( data );
       cb( err, data );
     });
 
