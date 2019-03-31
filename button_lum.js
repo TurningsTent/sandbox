@@ -46,21 +46,47 @@ class App {
   }
 
   onButtonPress( pin ){
+  	//TODO make sure state is ready
   	console.log( 'pressed: ',pin );
   	if( this.sensor_ready && this.leds_ready ){
   		this.leds.write( this.configs.led_gpios.active, true );
-  		this.lux_sensor.readLuminosity( ( err, data ) => {
-  			setTimeout( () => { this.leds.write( this.configs.led_gpios.active, false ) },500 );
-  			//this.leds.write( this.configs.led_gpios.active, false );
-	      if (err) {
+  		this.takeReadings( ( err, data ) => {
+  			this.leds.write( this.configs.led_gpios.active, false );
+  			if (err) {
 	          console.log(err);
 	      } else {
 	          console.log(data);
 	      }
-	    });
+  		});
   	} else {
   		console.log("Lux Sensor not ready yet");
   	}
+
+  }
+
+  takeReadings( cb ){
+
+  	async.times( this.configs.readings, ( n, next ) => {
+  		this.takeReading( ( err, result ) => {
+  			next( err, result );
+  		});
+		}, ( err, results ) => {
+			cb( err, results );
+		});
+
+  }
+
+  takeReading( cb ){
+
+  	this.lux_sensor.readLuminosity( ( err, data ) => {
+			setTimeout( () => { this.leds.write( this.configs.led_gpios.active, false ) },500 );
+			//this.leds.write( this.configs.led_gpios.active, false );
+      if (err) {
+          console.log(err);
+      } else {
+          console.log(data);
+      }
+    });
 
   }
 
@@ -75,5 +101,6 @@ let app = new App({
 	lux_sensor: {
 		AGAIN: 0,
 		ATIME: 1
-	}
+	},
+	readings: 20
 });
