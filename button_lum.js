@@ -50,8 +50,8 @@ class App {
   	if( this.sensor_ready && this.leds_ready ){
   		this.leds.write( this.configs.led_gpios.active, true );
   		this.lux_sensor.readLuminosity( ( err, data ) => {
-  			//setTimeout( () => { this.leds.write( this.configs.led_gpios.active, false ) },1000 );
-  			this.leds.write( this.configs.led_gpios.active, false );
+  			setTimeout( () => { this.leds.write( this.configs.led_gpios.active, false ) },500 );
+  			//this.leds.write( this.configs.led_gpios.active, false );
 	      if (err) {
 	          console.log(err);
 	      } else {
